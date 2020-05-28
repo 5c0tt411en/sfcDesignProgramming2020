@@ -15,6 +15,6 @@ void keyPressed() {
             s = s.substring(0, s.length() - 1);
         }
     } else {
-        s += key;
+        s += str(key);
     }
 }

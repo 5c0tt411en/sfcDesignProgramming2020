@@ -1,8 +1,8 @@
 PImage img;
-int p = 30;
+int p = 10;
 
 void setup() {
-    img = loadImage("sfc.jpg");
+    img = loadImage("sfc.png");
     size(720, 450);
     rectMode(CENTER);
     noStroke();
@@ -15,9 +15,9 @@ void draw() {
         for (int x = 0; x < img.width; x+=p) {
             color c = img.get(x, y);
             fill(c);
-            float d = dist(mouseX, mouseY, x / 2 + p / 4, y / 2 + p / 4);
+            float d = dist(mouseX, mouseY, x + p / 2, y + p / 2);
             if (d > 100)
-                rect(x / 2 + p / 4, y / 2 + p / 4, p / 2, p / 2);
+                rect(x + p / 2, y + p / 2, p, p);
         }
     }
 }

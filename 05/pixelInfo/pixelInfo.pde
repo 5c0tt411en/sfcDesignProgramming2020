@@ -1,5 +1,5 @@
 PImage img;
-int p = 30;
+int p = 15;
 
 void setup() {
     img = loadImage("sfc.png");
